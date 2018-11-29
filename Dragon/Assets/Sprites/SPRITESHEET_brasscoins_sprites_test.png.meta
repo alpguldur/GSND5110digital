@@ -1,0 +1,435 @@
+fileFormatVersion: 2
+guid: 39bfcf5b0b2136f4897d0828bd76bdf7
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: SPRITESHEET_brasscoins_sprites_test_0
+    21300002: SPRITESHEET_brasscoins_sprites_test_1
+    21300004: SPRITESHEET_brasscoins_sprites_test_2
+    21300006: SPRITESHEET_brasscoins_sprites_test_3
+    21300008: SPRITESHEET_brasscoins_sprites_test_4
+    21300010: SPRITESHEET_brasscoins_sprites_test_5
+    21300012: SPRITESHEET_brasscoins_sprites_test_6
+    21300014: SPRITESHEET_brasscoins_sprites_test_7
+    21300016: SPRITESHEET_brasscoins_sprites_test_8
+    21300018: SPRITESHEET_brasscoins_sprites_test_9
+    21300020: SPRITESHEET_brasscoins_sprites_test_10
+    21300022: SPRITESHEET_brasscoins_sprites_test_11
+    21300024: SPRITESHEET_brasscoins_sprites_test_12
+    21300026: SPRITESHEET_brasscoins_sprites_test_13
+    21300028: SPRITESHEET_brasscoins_sprites_test_14
+    21300030: SPRITESHEET_brasscoins_sprites_test_15
+    21300032: SPRITESHEET_brasscoins_sprites_test_16
+    21300034: SPRITESHEET_brasscoins_sprites_test_17
+    21300036: SPRITESHEET_brasscoins_sprites_test_18
+    21300038: SPRITESHEET_brasscoins_sprites_test_19
+    21300040: SPRITESHEET_brasscoins_sprites_test_20
+    21300042: SPRITESHEET_brasscoins_sprites_test_21
+    21300044: SPRITESHEET_brasscoins_sprites_test_22
+    21300046: SPRITESHEET_brasscoins_sprites_test_23
+    21300048: SPRITESHEET_brasscoins_sprites_test_24
+    21300050: SPRITESHEET_brasscoins_sprites_test_25
+    21300052: SPRITESHEET_brasscoins_sprites_test_26
+    21300054: SPRITESHEET_brasscoins_sprites_test_27
+    21300056: SPRITESHEET_brasscoins_sprites_test_28
+    21300058: SPRITESHEET_brasscoins_sprites_test_29
+    21300060: SPRITESHEET_brasscoins_sprites_test_30
+    21300062: SPRITESHEET_brasscoins_sprites_test_31
+    21300064: SPRITESHEET_brasscoins_sprites_test_32
+    21300066: SPRITESHEET_brasscoins_sprites_test_33
+    21300068: SPRITESHEET_brasscoins_sprites_test_34
+    21300070: SPRITESHEET_brasscoins_sprites_test_35
+    21300072: SPRITESHEET_brasscoins_sprites_test_36
+    21300074: SPRITESHEET_brasscoins_sprites_test_37
+    21300076: SPRITESHEET_brasscoins_sprites_test_38
+    21300078: SPRITESHEET_brasscoins_sprites_test_39
+    21300080: SPRITESHEET_brasscoins_sprites_test_40
+    21300082: SPRITESHEET_brasscoins_sprites_test_41
+    21300084: SPRITESHEET_brasscoins_sprites_test_42
+    21300086: SPRITESHEET_brasscoins_sprites_test_43
+    21300088: SPRITESHEET_brasscoins_sprites_test_44
+    21300090: SPRITESHEET_brasscoins_sprites_test_45
+    21300092: SPRITESHEET_brasscoins_sprites_test_46
+    21300094: SPRITESHEET_brasscoins_sprites_test_47
+    21300096: SPRITESHEET_brasscoins_sprites_test_48
+    21300098: SPRITESHEET_brasscoins_sprites_test_49
+    21300100: SPRITESHEET_brasscoins_sprites_test_50
+    21300102: SPRITESHEET_brasscoins_sprites_test_51
+    21300104: SPRITESHEET_brasscoins_sprites_test_52
+    21300106: SPRITESHEET_brasscoins_sprites_test_53
+    21300108: SPRITESHEET_brasscoins_sprites_test_54
+    21300110: SPRITESHEET_brasscoins_sprites_test_55
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SPRITESHEET_brasscoins_sprites_test_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 149924f715200f940915ce4fec5319de
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRITESHEET_brasscoins_sprites_test_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a02bf862b2bcad34991c4acb811e7b12
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRITESHEET_brasscoins_sprites_test_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95d33f76a0a913445b893a88105a2588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRITESHEET_brasscoins_sprites_test_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bf6b7ea419d37f409d449f2601ccd97
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRITESHEET_brasscoins_sprites_test_4
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8afb253febd58894e8e48d1f63f7fd8f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRITESHEET_brasscoins_sprites_test_5
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6becef9f0786d8f429c65ae3233fa20b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRITESHEET_brasscoins_sprites_test_6
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c010a14d5efd19a4a92a39e2b698f0f9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRITESHEET_brasscoins_sprites_test_7
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5e60bf3280ea504fa1d489f3a71f634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRITESHEET_brasscoins_sprites_test_8
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 018fc7234a5567d4a84786fde42ccae8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRITESHEET_brasscoins_sprites_test_9
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa5588c0f3e81c748999c642b3b5f3f0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRITESHEET_brasscoins_sprites_test_10
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ac2706c09cb53c4c9c087a9432a530a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRITESHEET_brasscoins_sprites_test_11
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c1f260aaa030ab4a8ceac5cc3575be2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRITESHEET_brasscoins_sprites_test_12
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42917d859608c644a97260ace2de504d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPRITESHEET_brasscoins_sprites_test_13
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9616e446e455e6d43a9bee5eb6a3cfe1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 357f97750c1608e498478ab5da6cfc5b
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

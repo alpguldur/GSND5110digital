@@ -7,7 +7,7 @@ public class MainMenu : MonoBehaviour {
 
     public void PlayGame()
     {
-        SceneManager.LoadScene("Tile_map");
+        SceneManager.LoadScene("Sunlight");
     }
 
     public void QuitGame()

@@ -8,13 +8,17 @@ public class ChaseEnemyAI : MonoBehaviour {
     public Transform target;
     public float chaseRange;
 
-    // Use this for initialization
-    void Start () {
+    //Audio
+    public AudioClip playerDamageSoundEffect;
+    private AudioSource source;
 
+    void Awake()
+    {
+        source = GetComponent<AudioSource>();
     }
-	
-	// Update is called once per frame
-	void Update ()
+
+    // Update is called once per frame
+    void Update ()
     {
         // Get the distance to the target and check to see if it close enough to chase
         float distanceToTarget = Vector3.Distance(transform.position, target.position);
@@ -29,4 +33,12 @@ public class ChaseEnemyAI : MonoBehaviour {
             transform.Translate(Vector3.up * Time.deltaTime * speed);
         }
 	}
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            source.Play();
+        }
+    }
 }

@@ -9,6 +9,15 @@ public class PatrolEnemyAI : MonoBehaviour {
     Transform currentPatrolPoint;
     int currentPatrolIndex;
 
+    //Audio
+    public AudioClip playerDamageSoundEffect;
+    private AudioSource source;
+
+    void Awake()
+    {
+        source = GetComponent<AudioSource>();
+    }
+
     // Use this for initialization
     void Start ()
     {
@@ -48,5 +57,13 @@ public class PatrolEnemyAI : MonoBehaviour {
 
         //apply the rotation to our tranform, facing waypoint
         transform.rotation = Quaternion.RotateTowards(transform.rotation, q, 180f);
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            source.Play();
+        }
     }
 }
