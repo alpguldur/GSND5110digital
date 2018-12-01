@@ -23,6 +23,9 @@ public class PlayerController : MonoBehaviour {
     public int coinCount;        //Integer to store the number of coins collected so far.
     public Text coinCountText;    //Store a reference to the UI Text component which will display the number of coins collected.
 
+    //Displaying Lives on Screen
+    public Text livesCountText;
+
     //Audio
     public AudioClip dashSoundEffect;
     private AudioSource source;
@@ -33,16 +36,12 @@ public class PlayerController : MonoBehaviour {
         rb2d = GetComponent<Rigidbody2D>();
         coinCount = 0;            //Initialize coinCount to zero.
         setCoinCountText();
+        setLivesCountText();
     }
 
     void Awake()
     {
         source = GetComponent<AudioSource>();
-    }
-
-    void Update ()
-    {
-        
     }
 
     void FixedUpdate()
@@ -53,6 +52,7 @@ public class PlayerController : MonoBehaviour {
         Vector2 movement = new Vector2(moveHorizontal, moveVertical);
         rb2d.AddForce(movement * speed);
         Dash();
+        checkCoins();
     }
 
     void Dash ()
@@ -137,9 +137,15 @@ public class PlayerController : MonoBehaviour {
     //Check if Health is equal or less than zero.
     public void CalculateDead()
     {
-        if (Health <= 0)
+        if (Health <= 0 && MainMenu.lives == 1)
         {
-            Debug.Log("The player has died!");
+            Health = 100f; //reset health
+            MainMenu.lives = 3; // reset lives
+            SceneManager.LoadScene("MainMenuLevel"); //send player back to Main Menu
+        }
+        else if (Health <= 0 && MainMenu.lives > 1)
+        {
+            MainMenu.lives = MainMenu.lives - 1;
             Health = 100f;  //reset health
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);   //reload current level
         }
@@ -157,23 +163,26 @@ public class PlayerController : MonoBehaviour {
         // Health Pickup Collision
         if (other.gameObject.CompareTag("HealthPickUp"))
         {
-            if (Health != 100)
+            if (Health <= 80)
             {
                 other.gameObject.SetActive(false);
                 Health = Health + 20;
+            }
+            else if (Health != 100 && Health > 80)
+            {
+                other.gameObject.SetActive(false);
+                Health = 100f;
             }
         }
         //Enemy Collision
         else if (other.gameObject.CompareTag("Enemy"))
         {
             jellyFishDamagePlayer(20);
-            Debug.Log(Health);
         }
         //Spike Coral Collision
         else if (other.gameObject.CompareTag("Coral"))
         {
             coralDamagePlayer(5);
-            Debug.Log(Health);
         }
         //Virtue Collision
         else if (other.gameObject.CompareTag("Virtue"))
@@ -191,6 +200,23 @@ public class PlayerController : MonoBehaviour {
                 other.gameObject.SetActive(false);
             }
         }
+    }
+
+    public void checkCoins()
+    {
+        if (coinCount >= 9)
+        {
+            MainMenu.lives = MainMenu.lives + 1;
+            coinCount = 0;
+            setCoinCountText();
+            setLivesCountText();
+            extraLifeScript.playExtraLifeSoundEffect();
+        }
+    }
+
+    public void setLivesCountText()
+    {
+        livesCountText.text = "Lives: " + MainMenu.lives.ToString();
     }
 
     //Collectible text displayed on screen

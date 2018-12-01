@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour {
 
+    public static int lives = 3;
+
     public void PlayGame()
     {
         SceneManager.LoadScene("Sunlight");

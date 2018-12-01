@@ -8,7 +8,13 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Tile_map.unity
     guid: b4f94b4a147f1754392d77de52599cca
+  - enabled: 1
+    path: Assets/Scenes/Sunlight.unity
+    guid: f658d533b50edbf4b8a83b44b5e36e8a
+  - enabled: 1
+    path: Assets/Scenes/MainMenuLevel.unity
+    guid: 269293da8e4ee1d488fe854c7e603076
   m_configObjects: {}
