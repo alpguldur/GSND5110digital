@@ -9,7 +9,7 @@ public class MainMenu : MonoBehaviour {
 
     public void PlayGame()
     {
-        SceneManager.LoadScene("Sunlight");
+        SceneManager.LoadScene("03_ShallowsLevel");
     }
 
     public void QuitGame()

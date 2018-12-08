@@ -141,7 +141,7 @@ public class PlayerController : MonoBehaviour {
         {
             Health = 100f; //reset health
             MainMenu.lives = 3; // reset lives
-            SceneManager.LoadScene("MainMenuLevel"); //send player back to Main Menu
+            SceneManager.LoadScene("00_TitleScreen"); //send player back to Main Menu
         }
         else if (Health <= 0 && MainMenu.lives > 1)
         {
