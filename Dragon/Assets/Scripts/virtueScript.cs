@@ -1,12 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class virtueScript : MonoBehaviour {
 
     public AudioClip virtueSoundEffect;
     private AudioSource source;
     private bool soundPlayed = false;
+    public Text FoundStrengthVirtue;
 
     void Awake()
     {
@@ -22,6 +24,18 @@ public class virtueScript : MonoBehaviour {
                 source.Play();
                 soundPlayed = true;
             }
+        FoundStrengthVirtue.gameObject.SetActive(true);
+            Start();
         }
     }
+
+    private void Start()
+    {
+        Invoke("DisableText", 9f);
+    }
+
+    void DisableText()
+        {
+            FoundStrengthVirtue.gameObject.SetActive(false);
+        }
 }
