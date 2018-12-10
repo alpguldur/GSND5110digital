@@ -55,16 +55,39 @@ public class PlayerController : MonoBehaviour {
         float moveVertical = Input.GetAxis("Vertical");
         Vector2 movement = new Vector2(moveHorizontal, moveVertical);
         rb2d.AddForce(movement * speed);
-        animator.SetFloat("Speed", Mathf.Abs(moveHorizontal));
-        animator.SetFloat("Speed", Mathf.Abs(moveVertical));
+        // check if player is moving for animation to play
+        if (Mathf.Abs(moveHorizontal) > 0.1)
+        {
+            animator.SetBool("movingHorizontal", true);
+
+        }
+        else if (Mathf.Abs(moveVertical) > 0.1)
+        {
+            animator.SetBool("movingVertical", true);
+        }
+        else
+        {
+            animator.SetBool("movingHorizontal", false);
+            animator.SetBool("movingVertical", false);
+        }
+
         Dash();
         checkCoins();
         Flip(moveHorizontal);
+        checkCombatAnim();
+    }
+
+    void checkCombatAnim()
+    {
+        if (Input.GetKey(KeyCode.Space))
+            animator.SetBool("inCombat", true);
+        else
+            animator.SetBool("inCombat", false);
     }
 
     void Flip(float moveHorizontal)
     {
-        if ((moveHorizontal < 0 && !facingRight) || (moveHorizontal > 0 && facingRight))
+        if ((moveHorizontal > 0 && !facingRight) || (moveHorizontal < 0 && facingRight))
         {
             facingRight = !facingRight;
             // when ScaleX value on player gameobject becomes -1, the player sprites flips horizontally
