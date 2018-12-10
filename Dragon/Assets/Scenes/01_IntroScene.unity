@@ -155,7 +155,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 79672010}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7eaef8a761f64d49b06d48838734e71, type: 3}
+  m_Script: {fileID: 11500000, guid: 89720d78d91552a4f8d8a01ec149c9d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &93812533
@@ -409,7 +409,7 @@ ParticleSystemRenderer:
   m_ReflectionProbeUsage: 0
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: ef848e79eb46cd24f968f95182df20f6, type: 2}
+  - {fileID: 2100000, guid: 7000b919451e6bb479d33571ae37952a, type: 2}
   - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -5357,7 +5357,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 729108659}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1556812b66458644597e003d45268fb6, type: 3}
+  m_Script: {fileID: 11500000, guid: 16b6b9d0b09589043bb706784666f71f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   DescendButton: {fileID: 93812535}
