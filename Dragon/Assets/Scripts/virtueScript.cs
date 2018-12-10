@@ -31,7 +31,7 @@ public class virtueScript : MonoBehaviour {
 
     private void Start()
     {
-        Invoke("DisableText", 9f);
+        Invoke("DisableText", 10.5f);
     }
 
     void DisableText()
