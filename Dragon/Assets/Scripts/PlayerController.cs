@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour {
     public float dashSpeed = 2f;
     public float dashTime = 1.2f;
     public static bool isDashing = false;
+    private bool facingRight;
 
     //Player Health
     public static float Health = 100f;
@@ -37,6 +38,7 @@ public class PlayerController : MonoBehaviour {
         coinCount = 0;            //Initialize coinCount to zero.
         setCoinCountText();
         setLivesCountText();
+        facingRight = true;
     }
 
     void Awake()
@@ -53,6 +55,19 @@ public class PlayerController : MonoBehaviour {
         rb2d.AddForce(movement * speed);
         Dash();
         checkCoins();
+        Flip(moveHorizontal);
+    }
+
+    void Flip(float moveHorizontal)
+    {
+        if ((moveHorizontal < 0 && !facingRight) || (moveHorizontal > 0 && facingRight))
+        {
+            facingRight = !facingRight;
+            // when Scale value on player gameobject becomes -1, the player sprites flips horizontally
+            Vector3 playerScale = transform.localScale;
+            playerScale.x *= -1;
+            transform.localScale = playerScale;
+        }
     }
 
     void Dash ()
@@ -177,7 +192,14 @@ public class PlayerController : MonoBehaviour {
         //Enemy Collision
         else if (other.gameObject.CompareTag("Enemy"))
         {
-            jellyFishDamagePlayer(20);
+            if (Input.GetKey(KeyCode.Space))
+            {
+                other.gameObject.SetActive(false);
+            }
+            else
+            {
+                jellyFishDamagePlayer(20);
+            }
         }
         //Spike Coral Collision
         else if (other.gameObject.CompareTag("Coral"))
