@@ -14,6 +14,8 @@ public class PlayerController : MonoBehaviour {
     public static bool isDashing = false;
     private bool facingRight;
 
+    public Animator animator;
+
     //Player Health
     public static float Health = 100f;
     public static float maxHealth = 100f;
@@ -53,6 +55,8 @@ public class PlayerController : MonoBehaviour {
         float moveVertical = Input.GetAxis("Vertical");
         Vector2 movement = new Vector2(moveHorizontal, moveVertical);
         rb2d.AddForce(movement * speed);
+        animator.SetFloat("Speed", Mathf.Abs(moveHorizontal));
+        animator.SetFloat("Speed", Mathf.Abs(moveVertical));
         Dash();
         checkCoins();
         Flip(moveHorizontal);
