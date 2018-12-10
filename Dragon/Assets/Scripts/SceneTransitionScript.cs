@@ -13,7 +13,12 @@ public class SceneTransitionScript : MonoBehaviour
 
     public void Descend()
     {
-        SceneManager.LoadScene("02_shallowsLevel");
+        SceneManager.LoadScene("03_ShallowsLevel");
+    }
+
+    public void Abyss()
+    {
+        SceneManager.LoadScene("04_AbyssLevel");
     }
 
     public void QuitGame()
