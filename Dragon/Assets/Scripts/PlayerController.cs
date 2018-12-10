@@ -238,6 +238,11 @@ public class PlayerController : MonoBehaviour {
         {
             other.gameObject.SetActive(false);
         }
+        //Dwayne - next scene load up
+        else if (other.gameObject.CompareTag("dwayne"))
+        {
+            SceneManager.LoadScene("Tile_map");
+        }
     }
 
     void OnCollisionEnter2D(Collision2D other)
