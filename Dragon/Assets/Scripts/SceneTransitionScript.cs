@@ -11,6 +11,11 @@ public class SceneTransitionScript : MonoBehaviour
         SceneManager.LoadScene("01_IntroScene");
     }
 
+    public void LevelSelect()
+    {
+        SceneManager.LoadScene("02_LevelSelect");
+    }
+
     public void Descend()
     {
         SceneManager.LoadScene("03_ShallowsLevel");
