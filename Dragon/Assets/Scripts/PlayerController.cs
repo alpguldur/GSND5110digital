@@ -63,7 +63,7 @@ public class PlayerController : MonoBehaviour {
         if ((moveHorizontal < 0 && !facingRight) || (moveHorizontal > 0 && facingRight))
         {
             facingRight = !facingRight;
-            // when Scale value on player gameobject becomes -1, the player sprites flips horizontally
+            // when ScaleX value on player gameobject becomes -1, the player sprites flips horizontally
             Vector3 playerScale = transform.localScale;
             playerScale.x *= -1;
             transform.localScale = playerScale;
