@@ -224,8 +224,9 @@ public class PlayerController : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D other)
     {
+
         //Coin collision
-        if (other.gameObject.CompareTag("Coin"))
+        if (other.gameObject.CompareTag("Coin") || (other.gameObject.CompareTag("DashTutorialCoin")))
         {
             coinCount = coinCount + 1;    //Add one to the current value of our coinCount variable.
             setCoinCountText();            //Reset Coin count text
@@ -288,6 +289,7 @@ public class PlayerController : MonoBehaviour {
                 other.gameObject.SetActive(false);
             }
         }
+
     }
 
     public void checkCoins()

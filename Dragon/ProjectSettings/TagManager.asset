@@ -13,6 +13,9 @@ TagManager:
   - breakableCoral
   - dwayne
   - Checkpoint
+  - TutorialEnemy
+  - TutorialCoin
+  - DashTutorialCoin
   layers:
   - Default
   - TransparentFX
