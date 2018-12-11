@@ -17,9 +17,10 @@ public class breakableCoralScript : MonoBehaviour {
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            if (PlayerController.isDashing == true)
+            if (PlayerController.isDashing == true && soundPlayed == false)
             {
                 source.Play();
+                soundPlayed = true;
             }
         }
     }

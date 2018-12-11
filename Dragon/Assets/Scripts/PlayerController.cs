@@ -16,15 +16,21 @@ public class PlayerController : MonoBehaviour {
 
     public Animator animator;
 
+    // Respawn and Checkpoint Locations
+    public Transform RespawnLocation;
+    public Transform checkpoint1, checkpoint2, checkpoint3;
+
     //Player Health
     public static float Health = 100f;
     public static float maxHealth = 100f;
 
     private Rigidbody2D rb2d;       //Store a reference to the Rigidbody2D component required to use 2D Physics.
 
-    //Collectibles
+    // Coin
     public int coinCount;        //Integer to store the number of coins collected so far.
     public Text coinCountText;    //Store a reference to the UI Text component which will display the number of coins collected.
+
+    public int checkpointCount;
 
     //Displaying Lives on Screen
     public Text livesCountText;
@@ -41,6 +47,7 @@ public class PlayerController : MonoBehaviour {
         setCoinCountText();
         setLivesCountText();
         facingRight = true;
+        checkpointCount = 0;
     }
 
     void Awake()
@@ -188,8 +195,30 @@ public class PlayerController : MonoBehaviour {
         else if (Health <= 0 && MainMenu.lives > 1)
         {
             MainMenu.lives = MainMenu.lives - 1;
+            setLivesCountText();
             Health = 100f;  //reset health
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);   //reload current level
+            CalculateCheckpoint(); // determine which checkpoint player is going to respawn
+            //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);   //reload current level
+        }
+    }
+
+    public void CalculateCheckpoint()
+    {
+        if(checkpointCount == 0)
+        {
+            transform.position = RespawnLocation.transform.position;
+        }
+        else if(checkpointCount == 1)
+        {
+            transform.position = checkpoint1.transform.position;
+        }
+        else if (checkpointCount == 2)
+        {
+            transform.position = checkpoint2.transform.position;
+        }
+        else if (checkpointCount == 3)
+        {
+            transform.position = checkpoint3.transform.position;
         }
     }
 
@@ -242,6 +271,11 @@ public class PlayerController : MonoBehaviour {
         else if (other.gameObject.CompareTag("dwayne"))
         {
             SceneManager.LoadScene("04_AbyssLevel");
+        }
+        else if (other.gameObject.CompareTag("Checkpoint"))
+        {
+            checkpointCount = checkpointCount + 1;
+            other.gameObject.SetActive(false);
         }
     }
 

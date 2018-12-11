@@ -12,6 +12,7 @@ TagManager:
   - Coral
   - breakableCoral
   - dwayne
+  - Checkpoint
   layers:
   - Default
   - TransparentFX
