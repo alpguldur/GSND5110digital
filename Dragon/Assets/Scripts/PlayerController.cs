@@ -241,7 +241,7 @@ public class PlayerController : MonoBehaviour {
         //Dwayne - next scene load up
         else if (other.gameObject.CompareTag("dwayne"))
         {
-            SceneManager.LoadScene("Tile_map");
+            SceneManager.LoadScene("04_AbyssLevel");
         }
     }
 
