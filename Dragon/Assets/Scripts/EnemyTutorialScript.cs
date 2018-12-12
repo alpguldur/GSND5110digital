@@ -9,7 +9,7 @@ public class EnemyTutorialScript : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("TutorialEnemy"))
+        if (other.gameObject.CompareTag("Player"))
         {
 
             EnemyTutorialText.gameObject.SetActive(true);
