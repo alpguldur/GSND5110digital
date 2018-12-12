@@ -5,7 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class SceneTransitionScript : MonoBehaviour
 {
-
+    public void Return()
+    {
+        SceneManager.LoadScene("00_TitleScreen");
+    }
     public void PlayGame()
     {
         SceneManager.LoadScene("01_IntroScene");
@@ -24,6 +27,11 @@ public class SceneTransitionScript : MonoBehaviour
     public void Abyss()
     {
         SceneManager.LoadScene("04_AbyssLevel");
+    }
+
+    public void Credits()
+    {
+        SceneManager.LoadScene("05_CreditsScene");
     }
 
     public void QuitGame()
