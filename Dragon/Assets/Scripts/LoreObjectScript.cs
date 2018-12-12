@@ -10,11 +10,8 @@ public class LoreObjectScript : MonoBehaviour {
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            if (Input.GetKey(KeyCode.Space))
-            {
-                FoundKkwaengariLore.gameObject.SetActive(true);
-                Start();
-            }
+            FoundKkwaengariLore.gameObject.SetActive(true);
+            Start();
         }
     }
     private void Start()
