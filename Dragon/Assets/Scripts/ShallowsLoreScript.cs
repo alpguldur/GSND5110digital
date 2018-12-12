@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class LoreObjectScript : MonoBehaviour {
+public class ShallowsLoreScript : MonoBehaviour {
     public Text FoundKkwaengariLore;
 
     void OnTriggerEnter2D(Collider2D other)

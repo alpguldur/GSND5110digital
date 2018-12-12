@@ -19,7 +19,7 @@ public class EnemyTutorialScript : MonoBehaviour {
     }
     // Use this for initialization
     private void Start () {
-        Invoke("DisableText", 9f);
+        Invoke("DisableText", 6f);
     }
 
 	void DisableText()
