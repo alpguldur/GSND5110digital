@@ -10,11 +10,8 @@ public class CheckpointTutorialScript : MonoBehaviour {
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            if (Input.GetKey(KeyCode.Space))
-            {
-                FirstCheckpoint.gameObject.SetActive(true);
-                Start();
-            }
+            FirstCheckpoint.gameObject.SetActive(true);
+            Start();
         }
     }
     private void Start()
