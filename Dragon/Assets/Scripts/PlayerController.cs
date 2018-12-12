@@ -252,6 +252,7 @@ public class PlayerController : MonoBehaviour {
             if (Input.GetKey(KeyCode.Space))
             {
                 other.gameObject.SetActive(false);
+                combatSoundScript.playCombatSoundEffect();
             }
             else
             {
@@ -272,6 +273,10 @@ public class PlayerController : MonoBehaviour {
         else if (other.gameObject.CompareTag("dwayne"))
         {
             SceneManager.LoadScene("04_AbyssLevel");
+        }
+        else if (other.gameObject.CompareTag("evilDwayne"))
+        {
+            SceneManager.LoadScene("05_CreditsScene");
         }
         else if (other.gameObject.CompareTag("Checkpoint"))
         {

@@ -17,16 +17,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/04_AbyssLevel.unity
     guid: 4cf86489e198cc143937009ee81118ad
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/05_CreditsScene.unity
     guid: 73408265bf3dec64f9273df050e1d29f
   - enabled: 1
     path: Assets/Scenes/02_LevelSelect.unity
     guid: fea3154c02fc7f649be1f883f6ea3b44
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   m_configObjects: {}
