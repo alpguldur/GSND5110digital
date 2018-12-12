@@ -24,7 +24,7 @@ public class AbyssLoreScript : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void DisableText()
     {
         Lore_EvilDwayne.gameObject.SetActive(false);
     }
