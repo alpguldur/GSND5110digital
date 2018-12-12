@@ -1,5 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,18 +13,17 @@ public class EnemyTutorialScript : MonoBehaviour {
     {
         if (other.gameObject.CompareTag("Player"))
         {
-
             EnemyTutorialText.gameObject.SetActive(true);
             Start();
         }
     }
     // Use this for initialization
-    void Start () {
+    private void Start () {
         Invoke("DisableText", 9f);
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+	void DisableText()
+    {
         EnemyTutorialText.gameObject.SetActive(false);
     }
 }
